@@ -29,7 +29,7 @@ nav {
         &:hover {
             color: $gray;
             transition: $transition;
-            transform: scale(1.15);
+            transform: $scale;
             display: block;
         }
     }
@@ -69,19 +69,6 @@ hgroup {
             font-weight: 300;
             color: rgba($gray, 0.9);
         }
-        button {
-            padding: 20px 26px;
-            background: $blue;
-            color: $white;
-            border: none;
-            font-size: 1rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: $transition;
-            &:hover {
-                background: $darkBlue;
-            }
-        }
         &:nth-child(1) {
             padding-left: 0;
         }
@@ -96,25 +83,43 @@ hgroup {
         }
     }
 }
-.team {
-    background: $blue;
-    color: $white;
+.title {
     text-align: center;
     h2 {
         font-size: 3rem;
+        margin-bottom: 20px;
+        font-weight: 100;
         & + p {
             color: $lightGray;
         }
     }
-    article {
+}
+.btn {
+    padding: 20px 26px;
+    background: $blue;
+    color: $white;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: $transition;
+    &:hover {
+        background: $darkBlue;
+    }
+}
+.team {
+    background: $blue;
+    color: $white;
+    .container {
         display: flex;
         margin-top: 70px;
     }
     .wrap {
         width: 25%;
-        margin-right: 60px;
-        border: solid 1px $lightGray;
+        margin-right: 70px;
+        border: solid 1px rgba($lightGray, 0.4);
         padding: 50px 25px;
+        text-align: center;
         &:last-child {
             margin: 0;
         }
@@ -128,15 +133,12 @@ hgroup {
     }
 }
 .blog {
-    h2 {
-        text-align: center;
-        font-size: 3rem;
-        & + p {
-            text-align: center;
-            color: $lightGray;
+    .title {
+        h2 {
+            color: $blue;
         }
     }
-    article {
+    .container {
         display: flex;
         margin-top: 70px;
         justify-content: space-between;
@@ -146,6 +148,48 @@ hgroup {
         width: 47%;
         img {
             width: 100%;
+            margin-bottom: 35px;
+        }
+        h2 {
+            color: $blue;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 35px;
+            line-height: 1.7;
+            font-weight: 300;
+        }
+    }
+}
+footer {
+    border-top: 1px solid rgba($blue, 0.3);
+    padding: 55px 0;
+    p {
+        float: left;
+        font-size: 0.8rem;
+        a {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    ul {
+        float: right;
+        li {
+            display: inline-block;
+            margin-left: 20px;
+            &:first-child {
+                margin-left: 0;
+            }
+            i {
+                transition: $transition;
+                color: $blue;
+                font-size: 1.5rem;
+                &:hover {
+                    transform: $scale;
+                }
+            }
         }
     }
 }
