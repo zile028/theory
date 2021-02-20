@@ -1,15 +1,27 @@
 @import "basic.scss";
-header {
+
+.headerIndex {
     background-image: url(images/banner.jpg);
     background-size: cover;
     background-position: top center;
     background-attachment: fixed;
     border-top: 8px solid $blue;
+    nav {
+        padding-top: 80px;
+    }
 }
+.headerOther {
+    background: $blue;
+    nav {
+        color: white;
+        padding: 15px 0;
+    }
+}
+
 nav {
     display: flex;
     justify-content: space-between;
-    padding-top: 80px;
+
     .logo {
         font-weight: 600;
         font-size: 1rem;
@@ -138,6 +150,10 @@ hgroup {
             color: $blue;
         }
     }
+    p {
+        line-height: 1.7;
+        margin-bottom: 35px;
+    }
     .container {
         display: flex;
         margin-top: 70px;
@@ -156,8 +172,8 @@ hgroup {
             margin-bottom: 20px;
         }
         p {
-            margin-bottom: 35px;
-            line-height: 1.7;
+            //margin-bottom: 35px;
+            //line-height: 1.7;
             font-weight: 300;
         }
     }

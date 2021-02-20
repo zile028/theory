@@ -40,12 +40,25 @@ ul {
   padding: 105px 0;
 }
 
-header {
+.headerIndex {
   background-image: url(images/banner.jpg);
   background-size: cover;
   background-position: top center;
   background-attachment: fixed;
   border-top: 8px solid #5385c1;
+}
+
+.headerIndex nav {
+  padding-top: 80px;
+}
+
+.headerOther {
+  background: #5385c1;
+}
+
+.headerOther nav {
+  color: white;
+  padding: 15px 0;
 }
 
 nav {
@@ -55,7 +68,6 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 80px;
 }
 
 nav .logo {
@@ -217,6 +229,11 @@ hgroup h4 span {
   color: #5385c1;
 }
 
+.blog p {
+  line-height: 1.7;
+  margin-bottom: 35px;
+}
+
 .blog .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -245,8 +262,6 @@ hgroup h4 span {
 }
 
 .blog .wrap p {
-  margin-bottom: 35px;
-  line-height: 1.7;
   font-weight: 300;
 }
 
