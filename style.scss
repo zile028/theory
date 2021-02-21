@@ -178,8 +178,97 @@ hgroup {
         }
     }
 }
+.element {
+    h3 {
+        font-size: 1.7rem;
+        font-weight: 100;
+        color: $blue;
+        margin-bottom: 30px;
+    }
+    h4 {
+        font-size: 1.3rem;
+        font-weight: 300;
+        color: $blue;
+        margin-bottom: 25px;
+    }
+    p {
+        margin-bottom: 35px;
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+    .twoColumn {
+        display: flex;
+        article {
+            flex: 1;
+            margin-right: 35px;
+            &:last-child {
+                margin-left: 0px;
+            }
+        }
+    }
+
+    .example {
+        strong,
+        b {
+            font-weight: 600;
+            color: $dark;
+        }
+        sub {
+            position: relative;
+            top: -1em;
+        }
+        code {
+            padding: 5px 10px;
+            background: rgba($lightGray, 0.1);
+            border: 1px solid $lightGray;
+        }
+        hr {
+            margin: 35px 0;
+        }
+        .column {
+            display: flex;
+            div {
+                flex: 1;
+            }
+        }
+        .headings {
+            & > * {
+                margin-bottom: 1em;
+                line-height: 1.5;
+                font-weight: 300;
+                color: $blue;
+            }
+            h2 {
+                font-size: 1.9rem;
+                font-weight: 100;
+            }
+            h3 {
+                font-size: 1.5rem;
+            }
+            h4 {
+                font-size: 1.2rem;
+            }
+            h5 {
+                font-size: 0.95rem;
+            }
+            h6 {
+                font-size: 0.75rem;
+            }
+        }
+        div:first-child {
+            margin-right: 70px;
+        }
+    }
+}
+hr {
+    border: none;
+    border-bottom: 1px solid rgba($blue, 0.3);
+    margin: 50px 0;
+    width: 100%;
+}
+
 footer {
-    border-top: 1px solid rgba($blue, 0.3);
+    border-top: 0.8px solid rgba($blue, 0.3);
     padding: 55px 0;
     p {
         float: left;

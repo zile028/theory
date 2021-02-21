@@ -265,8 +265,117 @@ hgroup h4 span {
   font-weight: 300;
 }
 
+.element h3 {
+  font-size: 1.7rem;
+  font-weight: 100;
+  color: #5385c1;
+  margin-bottom: 30px;
+}
+
+.element h4 {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: #5385c1;
+  margin-bottom: 25px;
+}
+
+.element p {
+  margin-bottom: 35px;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.element .twoColumn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.element .twoColumn article {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 35px;
+}
+
+.element .twoColumn article:last-child {
+  margin-left: 0px;
+}
+
+.element .example strong,
+.element .example b {
+  font-weight: 600;
+  color: #5a5a5a;
+}
+
+.element .example sub {
+  position: relative;
+  top: -1em;
+}
+
+.element .example code {
+  padding: 5px 10px;
+  background: rgba(180, 192, 201, 0.1);
+  border: 1px solid #b4c0c9;
+}
+
+.element .example hr {
+  margin: 35px 0;
+}
+
+.element .example .column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.element .example .column div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.element .example .headings > * {
+  margin-bottom: 1em;
+  line-height: 1.5;
+  font-weight: 300;
+  color: #5385c1;
+}
+
+.element .example .headings h2 {
+  font-size: 1.9rem;
+  font-weight: 100;
+}
+
+.element .example .headings h3 {
+  font-size: 1.5rem;
+}
+
+.element .example .headings h4 {
+  font-size: 1.2rem;
+}
+
+.element .example .headings h5 {
+  font-size: 0.95rem;
+}
+
+.element .example .headings h6 {
+  font-size: 0.75rem;
+}
+
+.element .example div:first-child {
+  margin-right: 70px;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid rgba(83, 133, 193, 0.3);
+  margin: 50px 0;
+  width: 100%;
+}
+
 footer {
-  border-top: 1px solid rgba(83, 133, 193, 0.3);
+  border-top: 0.8px solid rgba(83, 133, 193, 0.3);
   padding: 55px 0;
 }
 
